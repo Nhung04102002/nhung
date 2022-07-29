@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/index2.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div id="all">
+        <h1>TIC TAC TOE</h1>
+        <div id="abc">
+            <div class="display announcer hide"></div>
+        </div>
+
+        <div id="container">
+            <div id="score">
+                <span id="score_X">0</span>
+                <span id="score_O">0</span>
+            </div>
+
+            <div id="goals">
+                <div>
+                    <svg height="150" width="150">
+                        <circle cx="50" cy="50" r="45" stroke='#2C8DFF' stroke-width="7" fill= none />
+                        <text class="goal_X goal" x="28" y="78" fill="#2C8DFF">0</text>
+                    </svg>
+                </div>
+                <div>
+                    <svg height="150" width="150">
+                        <circle cx="50" cy="50" r="45" stroke="#FF4F4F" stroke-width="7" fill= none />
+                        <text class="goal_O goal" x="28" y="78" fill="#FF4F4F">0</text>
+                    </svg>
+                </div>
+            </div>
+            
+            <div id="board">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+
+            <div id="controls">
+                <button class="reset hide">Reset</button>
+                <button class="restart hide">Restart</button>
+                <img class="clap hide" src="https://i.pinimg.com/originals/81/08/46/810846141ae6e0205ae0e06e1ca38e28.gif" alt style="width: 200px;" >
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
